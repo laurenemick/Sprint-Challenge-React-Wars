@@ -14,8 +14,8 @@ const App = () => {
   useEffect(() => {
     axios.get('https://swapi.py4e.com/api/people')
       .then(res => {
-        console.log(res.data)
-        setCharacters(res.data)
+        console.log(res.data.results)
+        setCharacters(res.data.results)
       })
       .catch(err => {
         debugger
@@ -25,13 +25,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {
-        characters.map(char => {
-          return <Character key={char.name} characters={char} />
-        })
-      }
+      <Character characters={characters} />
     </div>
-  );
+  )
 }
 
 export default App;
