@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap');
+
 .App {
   text-align: center;
+  margin: 0 15%;
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px limegreen;
 }
 /* write your parent styles in here for your App.js */
